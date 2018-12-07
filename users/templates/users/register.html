@@ -1,0 +1,35 @@
+{%extends 'home/base.html'%}
+{% load static %}
+{%block css%}
+<link rel="stylesheet" href={% static 'user/register.css' %}>
+{% endblock css %}
+
+{%block content%}
+<div class="container container-colour container-padding container-bRadius">
+    <div class="row">   
+       
+
+                <div class="col-6">
+                    <p style="color:#0E385F; font-size: 20px;">Blog helps you connect and share with the people in your life.</p>
+                </div>
+                <div class=" col-6">
+                        <form method="POST" action="#" class="form-group">
+                                <h1>Create a new account</h1>
+                                <span class='register-note'>It's free and always will be.</span>
+                                {%csrf_token%}
+                                <fieldset>
+                                        <legend class="border-bottom solid mb-4"></legend>
+                                        {{form.as_p}}
+                                </fieldset>
+                                <div class="form-group">
+                                    <button class=" btn btn-outline-primary">Submit</button>
+                                </div>
+                        
+                            </form>
+                </div>
+
+        
+    </div>
+
+</div>
+{%endblock%}

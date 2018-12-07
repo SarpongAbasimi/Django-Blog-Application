@@ -1,3 +1,12 @@
 body{
     background-color: #E4E7F0;
 }
+
+.base-auth-holder{
+    width:100%;
+    height: 100px;
+}
+
+.base-auth-holder-colour{
+    background-color: #3A5A98;
+}

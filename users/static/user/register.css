@@ -1,0 +1,15 @@
+.container{
+    width:100%;
+}
+.container-padding{
+    padding:50px;
+}
+
+.container-bRadius{
+    border-radius: 10px;
+}
+
+.register-note{
+    font-size: 20px;
+    opacity: 0.6;
+}
