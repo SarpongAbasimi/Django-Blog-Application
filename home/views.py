@@ -12,13 +12,3 @@ def About(request):
     return render(request,template)
 
 #Raise an expection when user being serch does not exit
-def GetUser(request,userid):
-    template='home/userid.html'
-    try:
-        getUser=User.objects.get(id=userid)
-    except User.DoesNotExist:
-        raise Http404("Sorry the user with that Id does not exist") 
-    context={
-        'getUser':getUser
-    }
-    return render(request,template,context)
