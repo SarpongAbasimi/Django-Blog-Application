@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .forms import SignupForm
@@ -7,6 +6,11 @@ from .forms import SignupForm
 
 
 # Create your views here.
+""" SignupForm was imported from forms and it replaced and it repalced UserCreationForm """
+
+""" When the userRegistrationForm receives a request , if the request is a POST reqrest 
+    a form is instanciated and it is populated by the post request."""
+""" If the request is valid, the form is saved then the user is redirected to a login page """
 
 def userRegistrationForm(request):
     if request.method == 'POST':
