@@ -1,4 +1,7 @@
 /* styling for nave bar on register page*/
+body{
+    background-color: #E4E7F0;
+}
 .container{
     width:100%;
 }

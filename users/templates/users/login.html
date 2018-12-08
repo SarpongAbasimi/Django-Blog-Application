@@ -1,5 +1,24 @@
+<!--Extended base.html-->
 {%extends 'home/base.html'%}
 
+<!-- Loded static css and crispy form-->
+{% load crispy_forms_tags %}
+{% load static %}
+
+<!-- Link to css file for login.html-->
+{% block css %}
+    <link rel="stylesheet" href={% static 'user/login.css' %}>
+{% endblock css %}
+
 {% block content %}
- <h1 class="mt-1">This is the login page</h1>
+<div class="container">
+    <form method="POST">
+        <div class="login-container">
+                {% csrf_token%}
+                {{form |crispy }}
+        </div>
+    </form>
+</div>
+
+
 {% endblock %}
