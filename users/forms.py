@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 
 """ I have defined a new form class and passed the userCreation for to it"""
 class SignupForm(UserCreationForm):
-    firstname=forms.CharField(max_length=64)
-    lastname=forms.CharField(max_length=64)
-    email=forms.EmailField(max_length=254,help_text='Required for confirmation')
+    first_name=forms.CharField(max_length=64)
+    last_name=forms.CharField(max_length=64)
+    email=forms.EmailField(max_length=254)
 
     """ class meta allows me to define the model I 
     want the changes to happen on, which in this case is the User model
@@ -15,7 +15,7 @@ class SignupForm(UserCreationForm):
 
     class Meta:
         model=User
-        fields=['firstname','lastname','username','email','password1','password2']
+        fields=['first_name','last_name','username','email','password1','password2']
   
 
 
