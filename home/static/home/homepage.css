@@ -1,0 +1,41 @@
+body{
+    background-color: #333333;
+    font-family:'Open Sans', sans-serif;
+}
+
+/* centering login ,create account on home page*/
+.wrapper{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid rgba(206, 201, 201, 0.856);
+}
+
+/* login sign up containers */
+.login_container{
+    text-align: center;
+    margin-top: 10px;
+}
+.signup_container{
+    text-align: center;
+}
+
+/* login sign up sapn on home page*/
+.login_span{
+    margin-top: 5px;
+    width: 200px;
+    background-color: #1EA1E6;
+    color: #ffffff;
+}
+.create_account_span{
+    margin-bottom: 5px;
+    width: 200px;
+    background-color: #1EA1E6;
+    color: #ffffff;
+}

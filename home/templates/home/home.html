@@ -1,5 +1,21 @@
 {% extends "./base.html" %}
 
+{% block css%}
+{% load static %}
+<link rel="stylesheet" href={% static 'home/homepage.css' %}>
+{% endblock css %}
+
+
+
 {%block content%}
-<span> Name</span>
+<div class="container container_padding container_position">
+    <div class="row  wrapper input-group">
+        <div class="col-md-12  m-1 login_container">
+            <a class="btn login_span" href="{% url  'login-page' %}">Login</a>
+        </div>
+        <div class="col-md-12  m-1 signup_container">
+            <a class="btn create_account_span" href="{% url  'user_registration' %}">create Account</a>
+        </div>
+    </div>
+</div>
 {%endblock content%}
