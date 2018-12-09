@@ -6,10 +6,10 @@
 {% load static %}
 
 <!-- Link to css file for login.html-->
+
 {% block css %}
 <link rel="stylesheet" href={% static 'user/register.css' %}>
 {% endblock css %}
-
 
 {% block content %}
 <div class="container container-colour container-padding container-bRadius">
@@ -19,7 +19,7 @@
                 </div>
                 <div class=" col-6">
                         <form method="POST" action="#" class="form-group">
-                                <h1>Create a new account</h1>
+                                <h1 class='signup-quote' style="">Create a new account</h1>
                                 <span class='register-note'>It's free and always will be.</span>
                                 {%csrf_token%}
                                 <fieldset>
@@ -27,7 +27,7 @@
                                         {{form | crispy }}
                                 </fieldset>
                                 <div class="form-group">
-                                    <button class=" btn btn-outline-primary">Submit</button>
+                                    <button class=" btn btn-outline-primary">Sign Up</button>
                                 </div>
                         
                             </form>
