@@ -1,13 +1,17 @@
-{%extends 'home/base.html'%}
-{% load crispy_forms_tags %}
+<!--Extended base.html-->
+{% extends 'home/base.html' %}
 
+<!-- Loded static css and crispy form-->
+{% load crispy_forms_tags %}
 {% load static %}
-{%block css%}
+
+<!-- Link to css file for login.html-->
+{% block css %}
 <link rel="stylesheet" href={% static 'user/register.css' %}>
 {% endblock css %}
 
-{%block content%}
 
+{% block content %}
 <div class="container container-colour container-padding container-bRadius">
     <div class="row">   
                 <div class="col-6">
